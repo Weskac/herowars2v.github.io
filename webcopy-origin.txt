@@ -1,0 +1,64 @@
+Uri: https://azurecraft.eu/
+File Name: D:\Downloads\azurecraft.eu\index-1.htm
+Content Type: text/html
+
+Uri: https://azurecraft.eu/assets/Logo.png
+File Name: D:\Downloads\azurecraft.eu\assets\Logo-1.png
+Content Type: image/png
+
+Uri: https://azurecraft.eu/assets/logopng.png
+File Name: D:\Downloads\azurecraft.eu\assets\logopng-1.png
+Content Type: image/png
+
+Uri: https://azurecraft.eu/assets/wavedark.svg
+File Name: D:\Downloads\azurecraft.eu\assets\wavedark-1.svg
+Content Type: image/svg+xml
+
+Uri: https://azurecraft.eu/assets/wavelight.svg
+File Name: D:\Downloads\azurecraft.eu\assets\wavelight-1.svg
+Content Type: image/svg+xml
+
+Uri: https://azurecraft.eu/bootstrap.css
+File Name: D:\Downloads\azurecraft.eu\bootstrap-1.css
+Content Type: text/css
+
+ri: https://azurecraft.eu/assets/Wumpus.gif
+File Name: D:\Downloads\azurecraft.eu\assets\Wumpus.gif
+Content Type: image/gif
+
+Uri: https://azurecraft.eu/bans
+File Name: D:\Downloads\azurecraft.eu\bans.html
+Content Type: text/html
+
+Uri: https://azurecraft.eu/bootstrap.css
+File Name: D:\Downloads\azurecraft.eu\bootstrap.css
+Content Type: text/css
+
+Uri: https://azurecraft.eu/kicks
+File Name: D:\Downloads\azurecraft.eu\kicks.html
+Content Type: text/html
+
+Uri: https://azurecraft.eu/mutes
+File Name: D:\Downloads\azurecraft.eu\mutes.html
+Content Type: text/html
+
+Uri: https://azurecraft.eu/polyfillsJS.js
+File Name: D:\Downloads\azurecraft.eu\polyfillsJS.js
+Content Type: application/javascript
+
+Uri: https://azurecraft.eu/pravidla
+File Name: D:\Downloads\azurecraft.eu\pravidla.html
+Content Type: text/html
+
+Uri: https://azurecraft.eu/scriptsJS.js
+File Name: D:\Downloads\azurecraft.eu\scriptsJS.js
+Content Type: application/javascript
+
+Uri: https://azurecraft.eu/tresty
+File Name: D:\Downloads\azurecraft.eu\tresty.html
+Content Type: text/html
+
+Uri: https://azurecraft.eu/warnings
+File Name: D:\Downloads\azurecraft.eu\warnings.html
+Content Type: text/html
+
