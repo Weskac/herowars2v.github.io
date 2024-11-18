@@ -12193,7 +12193,6 @@ textarea.form-control-lg {
     color: white;
     background: #2c2c2c;
     border-radius: 10px;
-    padding: 10px;
     width: 150px;
     position: relative;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
@@ -12206,9 +12205,7 @@ textarea.form-control-lg {
     border-radius: 5px;
 }
 
-.team-member h3 {
-    margin: 5px 0;
-}
+
 
 .status {
     width: 15px;
@@ -12226,4 +12223,113 @@ textarea.form-control-lg {
 
 .status.offline {
     background-color: red;
+}
+
+body {
+    background: linear-gradient(135deg, #2b2b2b, #121212);
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #ffcc00;
+    text-transform: uppercase;
+}
+
+.section {
+    margin: 40px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.admin-team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.team-member {
+    text-align: center;
+    position: relative;
+    width: 150px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.2);
+}
+
+.bubble {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    background-color: #2c2c2c;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Přidá animaci */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Výchozí stín */
+}
+
+.bubble img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    height: 15px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+.team-member.online .bubble::after {
+    box-shadow: 0 10px 30px 10px green;
+}
+
+.team-member.offline .bubble::after {
+    box-shadow: 0 10px 30px 10px red;
+}
+
+h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+p {
+    margin-top: 5px;
+    font-size: 14px;
 }
