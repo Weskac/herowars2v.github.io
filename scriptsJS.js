@@ -55,38 +55,31 @@ if (mode === 'dark') {
 // Minecraft server IP
 const serverIP = "mc.herowars.cz";
 
-// Funkce pro aktualizaci stavu hráčů
+// Aktualizace stavu hráčů
 async function updatePlayerStatus() {
     try {
-        // Volání API
         const response = await fetch(`https://api.mcsrvstat.us/2/mc.herowars.cz`);
         const data = await response.json();
 
         if (data.online && data.players && data.players.list) {
             const onlinePlayers = data.players.list;
 
-            // Procházíme všechny členy admin týmu
             document.querySelectorAll('.team-member').forEach(member => {
                 const username = member.getAttribute('data-username');
-                const status = member.querySelector('.status');
-
-                // Kontrola, jestli je hráč online
                 if (onlinePlayers.includes(username)) {
-                    status.classList.remove('offline');
-                    status.classList.add('online');
+                    member.classList.add('online');
+                    member.classList.remove('offline');
                 } else {
-                    status.classList.remove('online');
-                    status.classList.add('offline');
+                    member.classList.add('offline');
+                    member.classList.remove('online');
                 }
             });
-        } else {
-            console.error("Server není online nebo API neposkytuje seznam hráčů.");
         }
     } catch (error) {
         console.error("Chyba při načítání stavu hráčů:", error);
     }
 }
 
-// První aktualizace a nastavení intervalu každých 30 sekund
+// První aktualizace a interval každých 30 sekund
 updatePlayerStatus();
 setInterval(updatePlayerStatus, 30000);
