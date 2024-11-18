@@ -12180,6 +12180,19 @@ textarea.form-control-lg {
         display: none!important
     }
 }
+
+.social-links {
+    margin-top: 10px; /* Mezera od ostatního obsahu */
+}
+
+.social-links a {
+    display: inline-block; /* Zajistí vedle sebe postavení odkazů */
+    margin: 0 10px; /* Vodorovná mezera mezi odkazy */
+    text-decoration: none; /* Bez podtržení */
+    color: #ffd700; /* Barva odkazu (volitelně přizpůsobte) */
+    font-weight: bold;
+}
+
 .admin-team {
     display: flex;
     gap: 20px;
@@ -12333,3 +12346,4 @@ p {
     margin-top: 5px;
     font-size: 14px;
 }
+
